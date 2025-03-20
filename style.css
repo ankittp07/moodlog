@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fffacd;
+  color: #352b26;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+button {
+  background-color: #c0190a;
+  color: #fffacd;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: #352b265b solid 1px;
+}
+
+main {
+  flex: 1;
+  /* to push the footer at bottom */
+}
+
+.logo {
+  color: #c0190a;
+  font-style: italic;
+}
+.logo:hover {
+  transform: rotate(3deg);
+  color: #8c1309;
+}
+
+#toggleSidebar {
+  transition: background-color 0.2s, padding-left 0.2s;
+}
+#toggleSidebar:hover {
+  padding-left: 10px;
+  background-color: #8c1309;
+}
+#sidebar {
+  position: fixed;
+  bottom: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 50%;
+  background-color: #ede7b7;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: bottom 0.3s ease-in-out;
+  border-radius: 20px 20px 0 0;
+  max-height: 100vh;
+}
+
+#sidebar.active {
+  bottom: 0;
+}
+#sidebar h2 {
+  margin-top: 0;
+  padding-bottom: 10px;
+  text-align: center;
+  border-bottom: #352b265b solid 1px;
+  color: #c0190a;
+}
+#moodHistory {
+  list-style: none;
+  margin-top: 5px;
+  padding: 0;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+#moodHistory li {
+  padding: 10px;
+  background-color: #403631a4;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px;
+}
+
+.date {
+  margin-top: 0;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.titleQuestion {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
+.moodChoices {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+  margin-bottom: 50px;
+}
+.mood {
+  border: #c0190a solid 1px;
+  padding: 20px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+}
+.mood:hover {
+  transform: rotate(3deg);
+}
+.moodChoices img {
+  width: 50px;
+  text-align: center;
+}
+.moodChoices p {
+  text-align: center;
+  margin-top: 5px;
+}
+
+#submitBtn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: large;
+}
+#submitBtn:hover {
+  background-color: #8c1309;
+}
+
+footer {
+  border-top: #352b265b solid 1px;
+  padding: 8px 0;
+}
+.footerContent {
+  text-align: center;
+}
+
+.selectedMood {
+  box-shadow: rgba(192, 25, 10, 0.8) 0px 3px 8px;
+  transform: rotate(3deg);
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoodLog - Daily Mood Tracker</title>
+
+    <!-- css file link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header part of website -->
+    <header>
+      <!-- logo -->
+      <h2 class="logo">MoodLog</h2>
+
+      <!--Track History slider -->
+      <button id="toggleSidebar">&larr; Track History</button>
+      <div id="sidebar">
+        <h2>Mood History</h2>
+        <ul id="moodHistory">
+          <li>Happy - 17.03.2025</li>
+          <li>Sad - 16.03.2025</li>
+          <li>Neutral - 15.03.2025</li>
+          <li>Excited - 14.03.2025</li>
+          <li>Happy - 13.03.2025</li>
+          <li>Sad - 12.03.2025</li>
+          <li>Neutral - 11.03.2025</li>
+          <li>Excited - 10.03.2025</li>
+          <li>Happy - 09.03.2025</li>
+          <li>Sad - 08.03.2025</li>
+          <li>Neutral - 07.03.2025</li>
+          <li>Excited - 06.03.2025</li>
+          <li>Happy - 05.03.2025</li>
+          <li>Sad - 04.03.2025</li>
+          <li>Neutral - 03.03.2025</li>
+          <li>Excited - 02.03.2025</li>
+          <li>Happy - 01.03.2025</li>
+          <li>Sad - 29.02.2025</li>
+          <li>Neutral - 28.02.2025</li>
+          <li>Excited - 27.02.2025</li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- main part of website -->
+    <main>
+      <!-- current date -->
+      <p class="date">Date :- <span id="todayDate"></span></p>
+
+      <!-- title -->
+      <h1 class="titleQuestion">How are you feeling today?</h1>
+
+      <!-- mood choices -->
+      <div class="moodChoices" id="moodChoices">
+        <!-- happy mood -->
+        <div id="happyMood" class="mood">
+          <img src="./assets/images/smile.png" alt="happy emoji" />
+          <p>Happy</p>
+        </div>
+
+        <!-- sad mood -->
+        <div id="sadMood" class="mood">
+          <img src="./assets/images/sad.png" alt="sad emoji" />
+          <p>Sad</p>
+        </div>
+
+        <!-- neutral mood -->
+        <div id="neutralMood" class="mood">
+          <img src="./assets/images/neutral.png" alt="" />
+          <p>Neutral</p>
+        </div>
+
+        <!-- excited mood -->
+        <div id="excitedMood" class="mood">
+          <img src="./assets/images/happy.png" alt="" />
+          <p>Excited</p>
+        </div>
+      </div>
+
+      <!-- submit button -->
+      <button id="submitBtn">Submit</button>
+    </main>
+
+    <!-- footer part of website -->
+    <footer>
+      <p class="footerContent">Copyright &copy; 2025 MoodLog</p>
+    </footer>
+
+    <!-- js file link -->
+    <script src="script.js"></script>
+  </body>
+</html>
